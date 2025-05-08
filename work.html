@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aadit’s Elite 8-Day Hybrid Workout Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #2980b9;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .day {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            padding: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+        .day:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+        .day h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 6px;
+        }
+        .am, .pm {
+            margin: 15px 0;
+            padding: 15px 20px;
+            border-left: 6px solid #2980b9;
+            background: #f0f6fb;
+            border-radius: 6px;
+        }
+        .pm {
+            border-left-color: #e74c3c;
+            background: #fef0f0;
+        }
+        .am strong, .pm strong {
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+            display: inline-block;
+            user-select: none;
+        }
+        ul {
+            margin: 8px 0 0 20px;
+            padding: 0;
+            list-style-type: disc;
+            line-height: 1.5;
+            color: #444;
+        }
+        .rest-day {
+            background-color: #f39c12;
+            color: white;
+            padding: 18px 15px;
+            border-radius: 7px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(243, 156, 18, 0.7);
+            margin-bottom: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0 0 0;
+            font-size: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        thead {
+            background-color: #2980b9;
+            color: white;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f7f9fc;
+        }
+        .tips {
+            background: #ecf0f1;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .tips h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        .tips ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #444;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 10px;
+            }
+            .hero {
+                padding: 30px 15px;
+                font-size: 1rem;
+                line-height: 1.3;
+            }
+            .day {
+                padding: 15px 15px;
+            }
+            .am, .pm {
+                padding: 12px 15px;
+            }
+            h3 {
+                font-size: 1.1rem;
+            }
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                display: none;
+            }
+            tbody tr {
+                margin-bottom: 15px;
+                border: 2px solid #2980b9;
+                border-radius: 8px;
+                padding: 12px;
+            }
+            tbody td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                text-align: left;
+                font-size: 0.95rem;
+            }
+            tbody td::before {
+                position: absolute;
+                top: 12px;
+                left: 15px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: 700;
+                color: #2980b9;
+            }
+            tbody td:nth-of-type(1)::before { content: "Focus Area"; }
+            tbody td:nth-of-type(2)::before { content: "Weekly Frequency"; }
+            tbody td:nth-of-type(3)::before { content: "Notes"; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="hero" role="banner">
+        <h1>Aadit’s Elite 8-Day Hybrid Workout Plan</h1>
+        <p>Transform your fitness with this optimized 8-day athletic and aesthetic hybrid split. Get ready to push your limits!</p>
+    </header>
+
+    <section class="day" id="day1" aria-labelledby="day1-title">
+        <h3 id="day1-title">Day 1 – Chest Dominant Push + Speed Core</h3>
+        <div class="am" aria-label="Day 1 morning workout">
+            <strong>🕗 AM:</strong>
+            <ul>
+                <li>Sprint Ladder (10m, 20m, 30m) – 3 rounds</li>
+                <li>Med Ball Slams – 3x12</li>
+                <li>Hanging Leg Raises – 3x12</li>
+                <li>Side Plank Reach – 3x12/side</li>
+                <li>Resistance Band Neck Flexion – 3x15</li>
+            </ul>
+        </div>
+        <div class="pm" aria-label="Day 1 evening workout">
+            <strong>🕕 PM:</strong>
+            <ul>
+                <li>Incline DB Press – 1 top set (5–9), 1 back-off (10–15)</li>
+                <li>Machine Chest Press – 3x10–15</li>
+                <li>Cable Fly (Drop Set) – 3x12–15</li>
+                <li>Weighted Dips – 3x8–12</li>
+                <li>Overhead Triceps Extension – 3x8–15</li>
+                <li>Lateral Raises – 4x failure</li>
+                <li>Barbell Shrugs – 3x15 (slow tempo)</li>
+                <li>Neck Curl (lying) – 3x15</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day" id="day2" aria-labelledby="day2-title">
+        <h3 id="day2-title">Day 2 – Back Thickness + Sprint Conditioning</h3>
+        <div class="am" aria-label="Day 2 morning workout">
+            <strong>🕗 AM:</strong>
+            <ul>
+                <li>6x20m Sprint Starts (max effort)</li>
+                <li>Dead Bug + Hollow Hold – 2 rounds</li>
+                <li>Ab Wheel Rollout – 3x10</li>
+                <li>Plate Neck Isometric Hold – 3x15s/side</li>
+                <li>Forearm Roller – 3 rounds</li>
+            </ul>
+        </div>
+        <div class="pm" aria-label="Day 2 evening workout">
+            <strong>🕕 PM:</strong>
+            <ul>
+                <li>Barbell Row – 1 top, 1 back-off</li>
+                <li>Lat Pulldown – 3x10–15</li>
+                <li>Cable Row – 3x10–15</li>
+                <li>Cable Pullover – 3x12–15</li>
+                <li>Rear Delt Fly – 3x15</li>
+                <li>Rope Curls – 3x12</li>
+                <li>DB Hammer Curl – 2x12</li>
+                <li>Dumbbell Shrugs – 3x15–20</li>
+                <li>Wrist Curls + Reverse Wrist Curls – 3x20 superset</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day" id="day3" aria-labelledby="day3-title">
+        <h3 id="day3-title">Day 3 – Quad-Focused Legs + Athletic Core</h3>
+        <div class="am" aria-label="Day 3 morning workout">
+            <strong>🕗 AM:</strong>
+            <ul>
+                <li>Agility Ladder + Cone Drill – 5 rounds</li>
+                <li>Sprint Relay (10/20/30m) – 3 rounds</li>
+                <li>Russian Twists (heavy) – 3x20</li>
+                <li>Farmers Carry – 3x30m (heavy)</li>
+            </ul>
+        </div>
+        <div class="pm" aria-label="Day 3 evening workout">
+            <strong>🕕 PM:</strong>
+            <ul>
+                <li>Barbell Back Squat – 1 top, 1 back-off</li>
+                <li>Leg Press – 3x10–15</li>
+                <li>Walking Lunges – 2x15/leg</li>
+                <li>Quad Extensions – 3x15</li>
+                <li>Ham Curl – 3x15</li>
+                <li>Standing Calf Raise – 3x20</li>
+                <li>Neck Bridge Hold (optional) – 3x20s</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="rest-day" id="day4" aria-labelledby="day4-title">
+        <h3 id="day4-title">Day 4 – Active Recovery (Mandatory)</h3>
+        <p><strong>AM/PM (light only):</strong></p>
+        <ul>
+            <li>1.5 km jog or incline walk</li>
+            <li>Dynamic mobility: Dead Bug, Bird Dog, Arm Circles</li>
+            <li>Foam Rolling</li>
+            <li>Yoga Flow or Thoracic Spine + Hip Mobility (15–20 mins)</li>
+        </ul>
+    </section>
+
+    <section class="day" id="day5" aria-labelledby="day5-title">
+        <h3 id="day5-title">Day 5 – Shoulder Push + Reaction Core</h3>
+        <div class="am" aria-label="Day 5 morning workout">
+            <strong>🕗 AM:</strong>
+            <ul>
+                <li>Reaction Ball Drill – 3x60s</li>
+                <li>BOSU Plank – 3x30s</li>
+                <li>Side Plank with Leg Raise – 3x12/side</li>
+                <li>Neck Harness Extensions – 3x15</li>
+            </ul>
+        </div>
+        <div class="pm" aria-label="Day 5 evening workout">
+            <strong>🕕 PM:</strong>
+            <ul>
+                <li>DB Shoulder Press – 1 top, 1 back-off</li>
+                <li>Weighted Dips – 3x8–12</li>
+                <li>Cable Lateral Raise – 3x15</li>
+                <li>Machine Chest Press – 3x10–15</li>
+                <li>Pec Deck – 3x15</li>
+                <li>Overhead Triceps Extension – 3x12</li>
+                <li>Upright Row – 3x12</li>
+                <li>Barbell Shrug Hold (10s top) – 3x12</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day" id="day6" aria-labelledby="day6-title">
+        <h3 id="day6-title">Day 6 – Back Width + Arms + Core Burnout</h3>
+        <div class="am" aria-label="Day 6 morning workout">
+            <strong>🕗 AM:</strong>
+            <ul>
+                <li>Reactive Sprint Drill – 4x20m</li>
+                <li>Hanging Leg Raise – 3x12</li>
+                <li>Hollow Body Hold – 3x30s</li>
+                <li>Neck Plate Hold (on bench) – 3x30s</li>
+                <li>Towel Hang – 3x30s</li>
+            </ul>
+        </div>
+        <div class="pm" aria-label="Day 6 evening workout">
+            <strong>🕕 PM:</strong>
+            <ul>
+                <li>Weighted Pull-Ups – 1 top, 1 back-off</li>
+                <li>T-Bar Row – 3x10–15</li>
+                <li>Lat Pulldown – 3x10–15</li>
+                <li>Rear Delt Fly – 3x15</li>
+                <li>EZ Bar Curl – 3x10</li>
+                <li>Cable Curl (slow negative) – 3x12</li>
+                <li>Wrist Roller or Reverse Curl – 3x20</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="day" id="day7" aria-labelledby="day7-title">
+        <h3 id="day7-title">Day 7 – Hamstring Glute Legs + Explosive Core</h3>
+        <div class="am" aria-label="Day 7 morning workout">
+            <strong>🕗 AM:</strong>
+            <ul>
+                <li>Broad Jumps – 3x6</li>
+                <li>Lateral Bounds – 3x10/side</li>
+                <li>Plank-to-Push-Up – 3x10</li>
+                <li>Farmers Walk Heavy – 3x30s</li>
+            </ul>
+        </div>
+        <div class="pm" aria-label="Day 7 evening workout">
+            <strong>🕕 PM:</strong>
+            <ul>
+                <li>Stiff-Leg Deadlift – 1 top, 1 back-off</li>
+                <li>Hack Squat – 3x12</li>
+                <li>Hamstring Curls – 3x15</li>
+                <li>Hip Thrusts – 3x15</li>
+                <li>Quad Extensions – 2x15 (finisher)</li>
+                <li>Seated Calf Raise – 3x20</li>
+                <li>Neck Curl or Shrug Hold – 3x15</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="rest-day" id="day8" aria-labelledby="day8-title">
+        <h3 id="day8-title">Day 8 – Full Rest</h3>
+        <ul>
+            <li>Sleep 8–9 hrs</li>
+            <li>High protein (2g/kg) + recovery carbs</li>
+            <li>Sauna/massage/mobility (optional)</li>
+            <li>Reflect on strength, sprint, and core progress</li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="training-focus-title">
+        <h2 id="training-focus-title">⚙️ Weekly Training Focus Strategy</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Focus Area</th>
+                    <th>Weekly Frequency</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chest</td>
+                    <td>2x</td>
+                    <td>Prioritized via incline and machine volume</td>
+                </tr>
+                <tr>
+                    <td>Shoulders</td>
+                    <td>2x</td>
+                    <td>Strength and hypertrophy balanced</td>
+                </tr>
+                <tr>
+                    <td>Back (Width + Thick)</td>
+                    <td>4x</td>
+                    <td>Vertical + horizontal emphasis</td>
+                </tr>
+                <tr>
+                    <td>Arms</td>
+                    <td>2–3x</td>
+                    <td>Alternating emphasis on biceps and triceps</td>
+                </tr>
+                <tr>
+                    <td>Legs (Quad/Ham Split)</td>
+                    <td>2x</td>
+                    <td>Balanced push and pull leg days</td>
+                </tr>
+                <tr>
+                    <td>Core</td>
+                    <td>Daily (AM)</td>
+                    <td>Includes both functional and aesthetic work</td>
+                </tr>
+                <tr>
+                    <td>Neck/Traps/Forearms</td>
+                    <td>3x</td>
+                    <td>Strategically spread to avoid CNS fatigue</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="tips" aria-labelledby="tips-title">
+        <h2 id="tips-title">🧠 Training Smart Tips</h2>
+        <ul>
+            <li>Prioritize movement quality before intensity to avoid injury.</li>
+            <li>Use AM sessions for speed, agility, and core activation.</li>
+            <li>Leverage PM workouts for strength and hypertrophy with proper rest between sets.</li>
+            <li>Incorporate recovery and mobility to maximize progress and prevent burnout.</li>
+            <li>Track your progress and adjust training loads progressively.</li>
+            <li>Maintain proper nutrition to support training demands and recovery.</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
+</content>
+</create_file>
